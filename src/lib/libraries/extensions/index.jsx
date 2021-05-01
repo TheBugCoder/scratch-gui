@@ -1,8 +1,8 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
-import controllerInputIconURL from './controllerInput/controller-input.png';
-import controllerInputInsetIconURL from './controllerInput/controller-input-small.svg';
+import controllerInputIconURL from './controller-input.png';
+import controllerInputInsetIconURL from './controller-input-small.svg';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -59,6 +59,7 @@ export default [
             />
         ),
         extensionId: 'controllerInput',
+        collaborator: 'TheBugCoder',
         iconURL: controllerInputIconURL,
         insetIconURL: controllerInputInsetIconURL,
         description: (
@@ -69,6 +70,7 @@ export default [
             />
         ),
         featured: true
+        disabled: false
     },
     {
         name: (
