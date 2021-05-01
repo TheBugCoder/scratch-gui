@@ -1,6 +1,9 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import controllerInputIconURL from './controllerInput/controller-input.png';
+import controllerInputInsetIconURL from './controllerInput/controller-input-small.svg';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -47,6 +50,26 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Controller Input"
+                description="Name for the 'Controller Input' extension"
+                id="gui.extension.music.name"
+            />
+        ),
+        extensionId: 'controllerInput',
+        iconURL: controllerInputIconURL,
+        insetIconURL: controllerInputInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play your projects with controllers."
+                description="Description for the 'Controller Input' extension"
+                id="gui.extension.music.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
